@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Guide Notebook</title>
+    <link rel="stylesheet" href="styles/notebook.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/polaroid.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <h1>Game Guide</h1>
+            <ul>
+                <li><a href="index.html" class="active">Guide</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="spread-nav">
+        <button class="prev-spread" disabled>&larr; Previous</button>
+        <button class="next-spread">Next &rarr;</button>
+    </div>
+
+    <main class="notebook">
+        <!-- First Spread -->
+        <div class="notebook-spread active" data-spread="1">
+            <div class="binding"></div>
+            <div class="page left-page">
+                <h2>Welcome to the Journal</h2>
+                <!-- Basic text entry -->
+                <div class="entry">
+                    <h3>Introduction</h3>
+                    <p>Welcome to this Journal. In full honesty, this is an amalgamation of my notes and experiences from Phasmophobia. This is my frustrations, my joys, and my everything else condensed down into a single location, a notebook. Anyway, that's all from me. Happy huntin'!</p>
+                </div>
+                
+                <!-- Image entry -->
+                <div class="entry">
+                    <div class="polaroid-container">
+                        <div class="polaroid">
+                            <img src="media/lobby.png" alt="The Phasmophobia lobby">
+                            <div class="sticky-note">
+                                The only place that isn't haunted around here...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Basic Text Entry -->
+                <div class="entry">
+                    <p>This is home. It might be a little bit empty, but at least the glass cabinets can be filled up. Plus, there's basketball. We keep all our tools here, and you can have anything you need... for a price.</p>
+                </div>
+
+                <div class="page-number">1</div>
+            </div>
+
+            <div class="page right-page">
+                <div class="entry toc">
+                    <h2>Contents</h2>
+                    <ul class="toc-list">
+                        <li>Welcome to the Game<span class="dots"></span><span class="page-ref">1</span></li>
+                        <li>Equipment Guide<span class="dots"></span><span class="page-ref">3</span></li>
+                        <li>Ghost Types<span class="dots"></span><span class="page-ref">5</span></li>
+                        <li>Evidence & Investigation<span class="dots"></span><span class="page-ref">7</span></li>
+                        <li>Cursed Possessions<span class="dots"></span><span class="page-ref">9</span></li>
+                        <li>Maps & Locations<span class="dots"></span><span class="page-ref">11</span></li>
+                        <li>Tips & Tricks<span class="dots"></span><span class="page-ref">13</span></li>
+                    </ul>
+                </div>
+                <div class="page-number">2</div>
+            </div>
+        </div>
+
+        <!-- Equipment Guide Spread -->
+        <div class="notebook-spread" data-spread="2">
+            <div class="binding"></div>
+            <div class="page left-page">
+                <h2>Equipment Guide</h2>
+                <div class="entry">
+                    <h3>The Ghost Hunter's Arsenal</h3>
+                    <p>Every ghost hunter needs their set tools. Here's what you'll find in the equipment van, and how to use each item to their full potential.</p>
+                </div>
+                <div class="entry">
+                    <h3><br>The Essentials</h3>
+                    <ul class="guide-list">
+                        <li>Flashlight - Your best friend while investigating, and in the dark. After all, it is dangerous to go alone.</li>
+                        <li>EMF Reader - Tells you where the action is. Measures ghost activity, watch for level 5.</li>
+                        <li>Thermometer - Used to find the ghost's favourite room. Keep checking for sub-zero temps.</li>
+                        <li>Spirit Box - A method of spectral communication. Speak clearly, stay alone, stay in the dark.</li>
+                        <li>D.O.T.S. Projector - Watch for silhouettes passing through the beam. That there is your ghost.</li>
+                        <li>Video Camera - Another set of eyes, with night vision. It is essential for catching ghost orbs.</li>
+                        <li>UV Flashlight - Look for fingerprints on doors and windows, or footprints near distrubed salt.</li>
+                    </ul>
+                </div>
+                <div class="page-number">3</div>
+            </div>
+
+            <div class="page right-page">
+                <div class="entry">
+                    <h3>Advanced Tools</h3>
+                    <ul class="guide-list">
+                        <li>D.O.T.S. Projector - Watch for silhouettes passing through.</li>
+                        <li>Ghost Writing Book - Place it in active areas.</li>
+                        <li>Thermometer - Cold spots indicate ghost presence.</li>
+                        <li>Sound Sensor - Track noise activity from the van.</li>
+                    </ul>
+                </div>
+                <div class="entry note-block">
+                    <h3>Pro Tips</h3>
+                    <p>Always bring a flashlight and your starter equipment. Set up video cameras early to monitor multiple rooms. Keep spare equipment in the van for quick replacements.</p>
+                </div>
+                <div class="page-number">4</div>
+            </div>
+        </div>
+
+        <!-- Second Spread -->
+        <div class="notebook-spread" data-spread="3">
+            <div class="binding"></div>
+            <div class="page left-page">
+                <!-- Stats or attributes -->
+                <div class="entry">
+                    <h3>Character Stats</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">[Stat 1]</span>
+                            <span class="stat-value">[Value]</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">[Stat 2]</span>
+                            <span class="stat-value">[Value]</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Table entry -->
+                <div class="entry">
+                    <h3>Equipment Guide</h3>
+                    <table class="guide-table">
+                        <tr>
+                            <th>Item</th>
+                            <th>Location</th>
+                        </tr>
+                        <tr>
+                            <td>[Item 1]</td>
+                            <td>[Location 1]</td>
+                        </tr>
+                        <tr>
+                            <td>[Item 2]</td>
+                            <td>[Location 2]</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="page-number">5</div>
+            </div>
+
+            <div class="page right-page">
+                <!-- Quest steps -->
+                <div class="entry">
+                    <h3>Quest Guide</h3>
+                    <ol class="quest-steps">
+                        <li>[Step 1]</li>
+                        <li>[Step 2]</li>
+                        <li>[Step 3]</li>
+                    </ol>
+                </div>
+
+                <!-- Tips box -->
+                <div class="entry tips-box">
+                    <h3>Pro Tips</h3>
+                    <ul class="tips-list">
+                        <li>[Advanced tip 1]</li>
+                        <li>[Advanced tip 2]</li>
+                    </ul>
+                </div>
+                <div class="page-number">6</div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/navigation.js"></script>
+</body>
+</html>

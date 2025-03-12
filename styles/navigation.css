@@ -1,0 +1,92 @@
+/* Spread Navigation */
+.spread-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 1.5rem auto 1.5rem auto;
+    padding: 0 1rem;
+}
+
+.spread-nav button {
+    font-family: var(--handwriting);
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.spread-nav button:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.spread-nav button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Spread Transitions */
+.notebook-spread {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.notebook-spread.active {
+    display: flex;
+    opacity: 1;
+}
+
+/* Page Numbers */
+.page-number {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--ink-color);
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.left-page .page-number {
+    right: 3rem;
+}
+
+.right-page .page-number {
+    left: 3rem;
+}
+
+/* Table of Contents */
+.toc {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    line-height: 2rem;
+}
+
+.toc a {
+    color: var(--ink-color);
+    text-decoration: none;
+    flex: 1;
+}
+
+.toc .page-ref {
+    opacity: 0.6;
+    margin-left: 0.5rem;
+}
+
+.toc-dots {
+    border-bottom: 1px dotted var(--line-color);
+    flex: 1;
+    margin: 0 0.5rem;
+}

@@ -1,0 +1,214 @@
+/* Typography */
+.page h2 {
+    margin: 0;
+    padding: 0;
+    color: var(--ink-color);
+    font-size: 1.75rem;
+    line-height: 2rem;
+    font-family: inherit;
+    margin-bottom: 2rem;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    position: relative;
+    top: -0.25rem;
+    text-align: center;
+}
+
+.page h3 {
+    margin: 0;
+    padding: 0;
+    color: var(--ink-color);
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-family: inherit;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+}
+
+/* Content Blocks */
+.entry {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.entry:last-child {
+    margin-bottom: 0;
+}
+
+.entry p {
+    margin: 0;
+    padding: 0;
+    color: var(--ink-color);
+    font-family: inherit;
+    letter-spacing: 0.01em;
+    word-spacing: 0.05em;
+    line-height: 2rem;
+}
+
+/* Lists */
+.guide-list, .quest-steps, .tips-list {
+    margin: 0;
+    padding: 0 0 0 1.5rem;
+}
+
+.guide-list li, .quest-steps li, .tips-list li {
+    margin-bottom: 0.5rem;
+    line-height: 2rem;
+    position: relative;
+    top: -0.25rem;
+}
+
+/* Images */
+.image-container {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.caption {
+    font-size: 0.9rem;
+    color: var(--ink-color);
+    opacity: 0.8;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Special Blocks */
+.note-block {
+    background: rgba(255, 247, 230, 0.5);
+    border-left: 3px solid #d4a455;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.tips-box {
+    background: rgba(230, 247, 255, 0.5);
+    border: 1px dashed #88c8e8;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+/* Tables */
+.guide-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.guide-table th,
+.guide-table td {
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--line-color);
+    line-height: 1.5rem;
+}
+
+.guide-table th {
+    font-weight: 600;
+    border-bottom: 2px solid var(--line-color);
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed var(--line-color);
+}
+
+.stat-label {
+    font-weight: 600;
+}
+
+/* Quest Steps */
+.quest-steps {
+    counter-reset: quest-counter;
+    list-style: none;
+}
+
+.quest-steps li {
+    list-style: none;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.quest-steps li::before {
+    content: counter(quest-counter);
+    counter-increment: quest-counter;
+    position: absolute;
+    left: 0;
+    font-weight: 600;
+    color: #d4a455;
+}
+
+/* Table of Contents */
+.toc {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.toc h2 {
+    margin: 0 0 2rem 0;
+    padding: 0;
+    color: var(--ink-color);
+    font-size: 1.75rem;
+    line-height: 2rem;
+    font-family: inherit;
+    margin-bottom: 2rem;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.toc-list li {
+    margin: 0;
+    padding: 0;
+    line-height: 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+    color: var(--ink-color);
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.toc-list li .dots {
+    flex: 1;
+    border-bottom: 2px dotted var(--ink-color);
+    opacity: 0.3;
+    margin: 0 0.5rem;
+    position: relative;
+    top: -0.2rem;
+}
+
+.toc-list li .page-ref {
+    opacity: 0.7;
+    font-size: 0.9em;
+    min-width: 1.5rem;
+    text-align: right;
+}
